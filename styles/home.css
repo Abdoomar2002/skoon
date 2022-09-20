@@ -5,6 +5,9 @@ hr{
   border-color: hsl(210, 100%, 50%);
   margin: 2% auto;
 }
+section{
+  background-color:#fff;
+}
 form
 {
 width:50%;

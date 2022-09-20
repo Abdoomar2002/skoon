@@ -29,7 +29,7 @@ ul{
 }
 .new
 {
-      background-image: url(../images/welcome.jpg);
+      background-image: url(..images/welcome.jpg);
       width: 100%;
       height: 60vh;
       max-height: 500px

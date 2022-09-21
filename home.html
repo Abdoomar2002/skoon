@@ -53,7 +53,7 @@
            </li>
          </ul>
 
-           <a class="nav-link "id="login" href="#">  Login Or Sign Up</a>
+           <a class="nav-link "id="login" onclick="document.getElementById('log').style.display='block'">  Login Or Sign Up</a>
            <a class="nav-link " href="#"><button type="button" class="btn btn-primary btn-lg">Place your Ad</button> </a>
 
        </div>
@@ -61,7 +61,68 @@
    </nav>
  </section>
 
+ <div id="log" class="modal">
 
+   <form class="modal-content animate" action="" method="post">
+     <div class="imgcontainer">
+       <span onclick="document.getElementById('log').style.display='none'" class="close" title="Close Modal">&times;</span>
+       <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+     </div>
+
+     <div class="container">
+       <label for="uname"><b>Username</b></label>
+       <input type="text" placeholder="Enter Username" name="uname" required>
+
+       <label for="psw"><b>Password</b></label>
+       <input type="password" placeholder="Enter Password" name="psw" required>
+
+       <button type="submit">Login</button>
+       <h6>or</h6>
+       <button type="button" id="SignUp" onclick="document.getElementById('log').style.display='none';">Sign Up</button>
+       <label>
+         <input type="checkbox" checked="checked" name="remember"> Remember me
+       </label>
+     </div>
+   </form>
+   </div>
+     <div id="sign" class="modal">
+
+       <form class="modal-content animate" action="" method="post">
+         <div class="imgcontainer">
+           <span onclick="document.getElementById('sign').style.display='none'" class="close" title="Close Modal">&times;</span>
+           <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+         </div>
+
+         <div class="container">
+           <label for="uname"><b>Username</b></label>
+           <input type="text" placeholder="Enter Username" name="uname" required>
+           <label for="email"><b>email</b></label>
+           <input type="email" name="email" placeholder="Enter Email" required >
+           <label for="psw"><b>Password</b></label>
+           <input type="password" placeholder="Enter Password" name="psw" required>
+           <button type="submit" id="SignUp2">Sign Up</button>
+         </div>
+
+     <div class="container" style="background-color:#f1f1f1">
+       <button type="button" onclick="document.getElementById('sign').style.display='none'" class="cancelbtn">Cancel</button>
+     </div>
+   </form>``
+ </div>
+
+ <script>
+
+ var modal = document.getElementById("log");
+var modal2 =document.getElementById("sign");
+ window.onclick = function(event) {
+     if (event.target == modal) {
+         modal.style.display = "none";
+     }}
+    document.getElementById("SignUp").onclick = function()
+      {
+        modal.style.display="none";
+      modal2.style.display="block";
+      }
+ </script>
 
 <section  class ="text">
   <div class="new">
